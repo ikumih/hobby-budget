@@ -22,22 +22,22 @@ const screenWidth = Dimensions.get("window").width;
 const Tab = createBottomTabNavigator();
 
 const categories = [
-  "ゲーム",
-  "イベント",
+  "遊び",
+  "旅行",
   "サブスクリプション",
-  "買い物",
-  "食費",
-  "趣味用品",
+  "ショッピング",
+  "飲食",
+  "推し活",
   "その他",
 ];
 
 const categoryLabels = {
-  Games: "ゲーム",
-  Events: "イベント",
+  Games: "遊び",
+  Events: "旅行",
   Subscriptions: "サブスクリプション",
-  Shopping: "買い物",
-  Food: "食費",
-  "Hobby gear": "趣味用品",
+  Shopping: "ショッピング",
+  Food: "飲食",
+  "Hobby gear": "推し活",
   Other: "その他",
 };
 
@@ -102,9 +102,9 @@ function InputScreen({
         contentContainerStyle={styles.scrollContent}
         keyboardShouldPersistTaps="handled"
       >
-        <Text style={styles.title}>趣味の家計簿</Text>
+        <Text style={styles.title}>Hobby Budget</Text>
 
-        <Text style={styles.label}>月の予算</Text>
+        <Text style={styles.label}今月の上限額</Text>
         <TextInput
           style={styles.input}
           placeholder="月の予算を入力"
@@ -217,7 +217,7 @@ function InputScreen({
         </View>
 
         <View style={styles.addButton}>
-          <Button title="支出を追加" color="#000000" onPress={addItem} />
+          <Button title="+追加する" color="#000000" onPress={addItem} />
         </View>
       </ScrollView>
     </KeyboardAvoidingView>
