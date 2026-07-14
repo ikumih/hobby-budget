@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Expo Web server",
+            "type": "shell",
+            "command": "npm.cmd",
+            "args": ["run", "web", "--", "--port", "8080"],
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "expo",
+                "pattern": {
+                    "regexp": "^$"
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "Starting project|Starting Metro Bundler",
+                    "endsPattern": "Waiting on http://localhost:8080|Web is waiting on"
+                }
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Run Expo Web",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}",
+            "preLaunchTask": "Start Expo Web server"
+        }
+    ]
+}
